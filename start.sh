@@ -26,7 +26,7 @@
 
 echo "Kick off the Github Action pipeline for building the ECR..."
 curl --request POST \
-  --url 'https://api.github.com/partofaplan/weathervane-py/actions/workflows/docker-image.yml/dispatches' \
+  --url 'https://api.github.com/repos/partofaplan/weathervane-py/actions/workflows/docker-image.yml/dispatches' \
   --header 'Authorization: token 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' \
   --header 'X-GitHub-Api-Version: 2022-11-28' \
   --data '{"ref":"main"}'
