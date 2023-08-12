@@ -27,7 +27,7 @@
 echo "Kick off the Github Action pipeline for building the ECR..."
 curl --request POST \
   --url 'https://api.github.com/repos/partofaplan/weathervane-py/dispatches' \
-  --header 'Authorization: token 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' \
+  --header 'Authorization: Bearer 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' \
   --data '{"event_type": "hello"}'
 
 echo "Deploy weather app to EKS..."
